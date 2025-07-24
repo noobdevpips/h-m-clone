@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products - H&M Clone</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">H&M</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html?category=men">Men</a></li>
+        <li><a href="products.html?category=women">Women</a></li>
+        <li><a href="products.html?category=kids">Kids</a></li>
+        <li><a href="#" id="cart-link">Cart (<span id="cart-count">0</span>)</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="product-listing">
+      <h2>All Products</h2>
+      <div class="product-grid" id="products-container">
+        <!-- Products will be injected by JS -->
+      </div>
+    </section>
+  </main>
+  <div id="product-modal" class="modal hidden">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <div id="modal-body"></div>
+    </div>
+  </div>
+  <div id="cart-modal" class="modal hidden">
+    <div class="modal-content">
+      <span class="close-cart">&times;</span>
+      <div id="cart-body"></div>
+    </div>
+  </div>
+  <footer>
+    <p>&copy; 2024 H&M Clone. For educational purposes only.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
